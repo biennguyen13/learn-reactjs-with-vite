@@ -1,8 +1,7 @@
 import { createContext, useState } from 'react'
 import { ExtendedPurchase } from 'src/types/purchase.type'
 import { User } from 'src/types/user.type'
-import { getAccessTokenFromLS, getProfileFromLS } from 'src/utils/auth'
-import { LocalStorageEventTarget } from 'src/utils/auth'
+import { getAccessTokenFromLS, getProfileFromLS, LocalStorageEventTarget } from 'src/utils/auth'
 
 interface AppContextInterface {
   isAuthenticated: boolean
