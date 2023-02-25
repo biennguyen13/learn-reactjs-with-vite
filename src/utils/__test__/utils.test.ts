@@ -9,8 +9,8 @@ describe('isAxiosError', () => {
   // it dùng để ghi chú trường hợp cần test
   it('isAxiosError trả về boolean', () => {
     // expect dùng để mong đợi giá trị trả về
-    expect(isAxiosError(null)).toBe(false)
-    expect(isAxiosError(null)).toBe(true)
+    expect(isAxiosError(new Error())).toBe(false)
+    expect(isAxiosError(new AxiosError())).toBe(true)
   })
 })
 
